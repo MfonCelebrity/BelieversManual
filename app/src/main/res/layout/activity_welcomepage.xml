@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+    
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomePage"
+    android:background="@drawable/gradient">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:background="@drawable/curve_edge"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/rccglogos"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="RCCG Workers In Training \n Manual "
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/logo"
+                app:layout_constraintRight_toRightOf="@id/logo"
+                app:layout_constraintTop_toBottomOf="@id/logo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    
+    <TextView
+        android:id="@+id/church_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="The Redeemed Christian \n Church of God "/>
+
+    <View
+        android:id="@+id/view"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/church_name"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/believes"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="40sp"
+        android:layout_marginLeft="40sp"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our fundamental beliefs in the bible"/>
+
+    <TextView
+        android:id="@+id/webelieve"
+        android:textSize="28px"
+        android:textStyle="bold"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/believes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Motto: Heb 13:8. Jesus Christ, the same yesterday, \n and today, and forever. \n
+We believe in the entirety of the Bible. \n
+We believe that there is only one God and Jesus Christ is his son. Psalm 33:6-9. \n
+We believe in living a Holy life after your repentance. Heb. 12:14 \n
+We believe in water baptism in the name of the Father, Son, and the Holy Ghost Math. 28:19
+We believe in Restitution as a sign of true repentance. Acts 24:16 \n
+We believe in due reverence to parents and authority. Eph. 6:1-3, Rm. 13:1, Heb 13:17. \n
+We believe Marriage should be between a man and a woman. Lev. 18:22.
+We believe in payment of Tithe as 10% of your income. Mal. 3: 8-12
+We believe in re-marriage based on the Bible alone. Matt. 5:31-32, 19:9; Mark 10:11-12; Luke 16:18; Rom. 7:2-3; Mall 2:13-16; Gen. 2:18: Matt. 19:4-6. \n
+We believe in children dedication.
+We believe in the resurrection and the second coming of our Lord Jesus Christ Math. 24: 40-44."
+/>
+
+
+    <TextView
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@id/webelieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="As new born babes desire the \n sincere milk of the word , that
+ ye may grow thereby. 1 peter 2:2"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</ScrollView>

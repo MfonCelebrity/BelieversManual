@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--  res/drawable/curve_edge.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="rectangle"
+android:padding="5dp"><gradient
+       android:startColor = "#72EA55"
+        android:endColor = "#FFFFFF"
+        android:type = "linear" />
+<corners
+    android:bottomRightRadius="30dp"
+    android:bottomLeftRadius="30dp"
+    />
+    </shape>
